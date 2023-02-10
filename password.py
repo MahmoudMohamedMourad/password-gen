@@ -13,19 +13,19 @@ s3 =list(string.digits)
 s4 =list(string.punctuation)
 
 
-chracters_number= input("how many chracters for the password")
+chracters_number= input("how many chracters for the password: ")
 
 while True: 
     try:
         chracters_number = int (chracters_number)
         if chracters_number< 6 :
             print ("you need at least 6 chracters")
-            chracters_number= input("please enter the number again")
+            chracters_number= input("please enter the number again: ")
         else :
             break
     except : 
         print("please enter number only")
-        chracters_number= input("please enter the number again")
+        chracters_number= input("please enter the number again: ")
 random.shuffle(s1)
 random.shuffle(s2)
 random.shuffle(s3)
